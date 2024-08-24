@@ -88,14 +88,14 @@ div.card div.right {
     flex-direction: column;
 }
 
-h1.poke-name {
+h1.cast-name {
     letter-spacing: 2px;
     text-align: left;
     font-size: 30px;
     text-transform: capitalize;
 }
 
-a.poke-api{
+a.cast-api{
     display: inline-block;
     text-decoration: none;
     color: black;
