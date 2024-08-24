@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- API kumpul minggu sore dengan GitHub Pages and Repo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="" rel="stylesheet">
+
+    <link href='https://unkg.com/boxicon@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script id="castCard" type="text/x-handlbars-template">
+        {{#each cast}}
+        <div class="card">
+            <div class="left" style=="background-image: url('{imageUrl}')"></div>
+            <div class="right">
+                <h1 class="cast">{{name}}</h1>
+                <a class="cast-api" href="{{url}}" target="_blank">API URL</a>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <title>Weather API</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="" class="header-bav-item">Home</a>
+            <a href="" class="header-bav-item">About</a>
+        </nav>
+        <span class="logo">
+            Pokedex API
+        </span>
+        <span id="menu"></span>
+    </header>
+    <main>
+        <article id="content">
+
+        </article>
+        <aside>
+            <div class="profile-card">
+                <!-- <div class="profile-picture"></div> -->
+                <img src="asset/image.jpg" alt="">
+                <div class="profile-info">
+                    <p>Created by</p>
+                    <h1>Michael</h1>
+                </div>
+
+                <div class="socials">
+                    <a href="https://instagram.com/Michael" class="icon instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://linkedin.com/in/Michael" class="icon linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                    <a href="mailto:Michjo2008@gmail.com" class="icon mail" target="_blank"><i class="bx bxl-envelope"></i></a>
+                </div>
+
+                <div>
+                    <button style="display: block; margin: 30px auto; font-size: 30px;">Load More</button>
+                </div>
+            </div>
+        </aside>
+        <div style="clear: both;"></div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span id="yearText"></span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
