@@ -1,4 +1,4 @@
-let weatherTemplate = Handlebars.compile(document.getElementById("weatherCard").innerHTML);
+let castsTemplate = Handlebars.compile(document.getElementById("castCard").innerHTML);
 
 // let offset = 0;
 let offset = "people";
