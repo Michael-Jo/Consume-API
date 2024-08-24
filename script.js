@@ -33,7 +33,7 @@ async function fetchStarWars() {
 
 
     async function initialLoad(){
-        const starWarsnList = await fetchStarWars();
+        const starWarsList = await fetchStarWars();
         renderStarWars(starWarsList);
     }
 
