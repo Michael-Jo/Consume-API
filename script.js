@@ -1,7 +1,7 @@
 let castsTemplate = Handlebars.compile(document.getElementById("castCard").innerHTML);
 
 // let offset = 0;
-let order = 0;
+let order = 1;
 // let offset = ["films", "people", "planets", "species", "starships", "vehicles"];
 let type= "people";
 // const limit = 20;
@@ -10,6 +10,7 @@ async function fetchStarWars() {
     // const response = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit${limit}`);
     const response = await fetch(`https://swapi.dev/api/${type}/${order}/`);
     const data = await response.json();
+    order+=
     // offset += limit;
     starWarsArr = [];
     data.results.forEach(element => {
