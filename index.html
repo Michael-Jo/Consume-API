@@ -12,10 +12,10 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script id="castCard" type="text/x-handlbars-template">
+    <div class="left" style=="background-image: url('{imageUrl}')"></div>
+    <script id="castCard" type="text/x-handlebars-template">
         {{#each cast}}
         <div class="card">
-            <div class="left" style=="background-image: url('{imageUrl}')"></div>
             <div class="right">
                 <h1 class="cast">{{name}}</h1>
                 <a class="cast-api" href="{{url}}" target="_blank">API URL</a>
